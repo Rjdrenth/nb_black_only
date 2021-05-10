@@ -13,7 +13,7 @@ def readme(file_name):
 
 setup(
     name="nb_black_only",
-    version="1.0.8",
+    version="1.0.9",
     description="A simple extension for Jupyter Notebook and Jupyter Lab to beautify Python code automatically using Black. This version only supports black and stripts yapf support. Based on https://github.com/dnanhkhoa/nb_black",
     long_description=readme(file_name="README.md"),
     long_description_content_type="text/markdown",
