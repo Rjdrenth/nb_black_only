@@ -29,13 +29,6 @@ if sys.version_info >= (3, 6, 0):
         return format_str(src_contents=code, mode=FileMode())
 
 
-else:
-    from yapf.yapflib.yapf_api import FormatCode
-
-    def _format_code(code):
-        return FormatCode(code, style_config="facebook")[0]
-
-
 def _transform_magic_commands(cell, hidden_variables):
     def __cell_magic(lines):
         # https://github.com/ipython/ipython/blob/1879ed27bb0ec3be5fee499ac177ad14a9ef7cfd/IPython/core/inputtransformer2.py#L91
